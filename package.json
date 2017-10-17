@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.2.1",
-    "nightmare": "^2.10.0"
+    "nightmare": "^2.10.0",
+    "twilio": "^3.8.1"
   }
 }

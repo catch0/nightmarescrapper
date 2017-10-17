@@ -1,9 +1,17 @@
 var jquery = require('jquery');
 var Nightmare = require('nightmare');
       nightmare = Nightmare();
+      //bringing in twillio
+var twilio = require('twilio');
+var client = twilio(process.env.Twilio_Account_SID, process.env.TWILIO_AUTH_TOKEN)
+//sending messages
+client.sendMessage.create({
+  to: '12142457207',
+
+})
+
 
 var city = process.argv[2]
-
 nightmare.goto('http://' + city + '.craigslist.org/search/bia?query=road&hasPic=1&postedToday=1')
 //visits the city specified
 .wait(2000)
@@ -26,4 +34,5 @@ nightmare.goto('http://' + city + '.craigslist.org/search/bia?query=road&hasPic=
     console.log(result[bike].link)
     console.log("\n")
   }
+
 })
