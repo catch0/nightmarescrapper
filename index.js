@@ -2,13 +2,16 @@ var jquery = require('jquery');
 var Nightmare = require('nightmare');
       nightmare = Nightmare();
       //bringing in twillio
-var twilio = require('twilio');
-var client = twilio(process.env.Twilio_Account_SID, process.env.TWILIO_AUTH_TOKEN)
-//sending messages
-client.sendMessage.create({
-  to: '12142457207',
-
-})
+var accountSid = 'AC92bc1a2280f373b36fe52a516fe47845';
+var authToken = 'b409ac38d2cd9f72d3d74a0fb2226b68';
+var twilio = require('twilio')
+var client = new twilio(accountSid,authToken);
+// sending messages
+client.messages.create({
+  from: '+4698888235',
+  to: '+12142457207',
+  body: 'twilio works'
+}).then((message)=>console.log(message.sid));
 
 
 var city = process.argv[2]
@@ -34,5 +37,4 @@ nightmare.goto('http://' + city + '.craigslist.org/search/bia?query=road&hasPic=
     console.log(result[bike].link)
     console.log("\n")
   }
-
 })
