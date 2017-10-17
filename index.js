@@ -2,9 +2,9 @@ var jquery = require('jquery');
 var Nightmare = require('nightmare');
       nightmare = Nightmare();
 
+var city = process.argv[2]
 
-
-nightmare.goto('http://dallas.craigslist.org/search/bia?query=road&hasPic=1&postedToday=1')
+nightmare.goto('http://' + city + '.craigslist.org/search/bia?query=road&hasPic=1&postedToday=1')
 //visits the city specified
 .wait(2000)
 .evaluate(function(){
