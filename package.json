@@ -12,6 +12,10 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "nightmare": "^2.10.0",
-    "twilio": "^3.8.1"
+    "twilio": "^3.8.1",
+    "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
   }
 }
