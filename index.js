@@ -14,6 +14,8 @@ var xoath2 = require('xoauth2');
 //setting environmental variables
 var account = process.env.ACCOUNT ;
 var password = process.env.PASS ;
+var smtpCall = process.env.SMTP_CALL ;
+
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth:{
@@ -47,15 +49,18 @@ nightmare.goto('http://' + city + '.craigslist.org/search/bia?query=road&hasPic=
 })
  .end()
 .then(function(result){
+  console.log(smtpCall)
+  console.log("-m")
   for(bike in result){
-    console.log([bike].title)
-    console.log([bike].link)
+    console.log(result[bike].title)
+    console.log(result[bike].link)
+    console.log("/n")
   }
 })
 
-transporter.sendMail(mailOptions, function (err, info) {
-   if(err)
-     console.log(err)
-   else
-     console.log(info);
-});
+// transporter.sendMail(mailOptions, function (err, info) {
+//    if(err)
+//      console.log(err)
+//    else
+//      console.log(info);
+// });

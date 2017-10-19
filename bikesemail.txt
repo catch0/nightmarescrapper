@@ -1,0 +1,17 @@
+-f lumanwalters@gmail.com -t spencerpeacock@gmail.com -s smtp.gmail.com:587 -xu lumanwalters -xp Navidson15 -u "Bikes listed today" - m
+-m
+Road Bike Shimano 21 Speed Racing Bicycle 44cm
+https://dallas.craigslist.org/dal/bik/d/road-bike-shimano-21-speed/6352390399.html
+/n
+Boat and Kayak Accessories
+https://dallas.craigslist.org/ftw/bik/d/boat-and-kayak-accessories/6352705391.html
+/n
+2016 Carbon Ridley X-Trail Cross/Gravel Rig
+https://dallas.craigslist.org/ftw/bik/d/2016-carbon-ridley-trail/6352657157.html
+/n
+Specialized
+https://dallas.craigslist.org/ndf/bik/d/specialized/6351915650.html
+/n
+Tricycle ELECTRIC Bike, Bicycle, Trike Ready to ride
+https://easttexas.craigslist.org/bik/d/tricycle-electric-bike/6351731928.html
+/n
